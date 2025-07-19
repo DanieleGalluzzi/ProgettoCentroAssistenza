@@ -1,0 +1,162 @@
+﻿/*  Reset di base per i margini(esterno) e per il padding (margine interno) */
+* {
+    margin: 0;  /* margini esterni del documento*/
+    padding: 0; /* margini interni del documento*/
+    box-sizing: border-box; /*include nel calcolo bordi e margini*/
+}
+/* stile del corpo del documento html */
+body {
+    /* font dei caratteri */
+    font-family: Roboto, Arial;
+
+    /*spaziatura tra le righe*/
+    line-height: 1.6;
+
+    /* colore di background */
+    background-color: #f4f4f4; /*sfondo grigio chiaro in esadecimale*/
+
+    /* colore testo*/
+    color: #333; /*testo grigio scuro*/
+}
+
+/* stile collegamenti*/
+a {
+    text-decoration: none; /* rimuove la sottolineatura */
+    color: inherit; /* ultimo colore utilizzato del tag precdente */
+}
+
+/*stile dell'immagine o logo in abase alla classe*/
+.logo{
+    width: 75px;
+    height: 75px;
+    margin-left: 20px;
+    border-radius: 50%;  /*il logo diventa un cerchio*/
+    object-fit: cover;
+    border: 2px solid #333 /** bordo del logo */
+}
+
+/*stile intestazione del sito*/
+header {
+    background-color: #0066cc; /* colore blu acceso */
+    color: #fff; /* colore del testo all'interno bianco */
+    padding: 12px 0;
+    border-bottom: solid 4px #004999; /* bordo inferiore pieno*/
+}
+
+/*stile di nav, barra di navigazione*/
+nav {
+    display: flex; /* trasforma il tag in un elemento flessibile */
+    justify-content: center; /*allinea gli elementi al centro*/
+    align-items: center; /*allineamento verticale*/
+    padding: 0 30px;
+}
+
+/*stile per elementi di navigazione*/
+nav ul {
+     display: flex;
+     list-style: none; /* rimuove i puntini della lista */
+}
+
+ /*stile di li del menu di navigazione*/
+ nav ul li {
+    margin: 0 1.5rem;
+ }
+
+ /*stile dei collegamenti ipertestuali*/
+ nav ul li a {
+    font-size: 20px; /* dimensione testo link */
+    color: gold;
+    text-transform: uppercase; /*trasforma il testo in maiuscolo*/
+    transition: color 0.3s ease; /* cambio colore al passaggio del mouse più fluido */
+  }
+
+ /*hover sui collegamenti*/
+  nav ul li a:hover {
+     color: darkgoldenrod; /*cambia colore al passaggio del mouse*/
+  }
+
+    /* stile del main */
+  main {
+      padding: 30px;
+      background-color: white; 
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0; /*ombre*/
+      max-width: 1200px;
+      margin: 10px auto 10px;
+  }
+
+  /** modifica titoli*/
+  main h2 {
+      color: #0066cc; /* blu intenso */
+      margin-bottom: 16px;
+      font-size: 28px;
+  }
+
+  /* modifica paragrafi */
+  main p {
+      font-size: 16px;
+      margin-bottom: 24px;
+  }
+
+  /* modifica lista */
+  main ul {
+      margin-left: 24px;
+      margin-bottom: 24px;
+  }
+
+  main ul li {
+      margin-bottom: 12px;
+  }
+
+  /* stile per le immagini di main */
+  main img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 8px;
+      margin: 0 auto 16px;
+      display: block; /* da elemento in line ad uno in block */
+  }
+
+  /* stile footer */
+  footer {
+      background-color: #004999;
+      text-align: center;
+      padding: 16px;
+      color: #fff; /* bianco */
+      margin-top: 32px;
+      font-size: 14px;
+  }
+
+  /*stile form */
+  form {
+      background-color: #f9f9f9;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0, 0.1); /* rgba trasparenza ombra e colore*/
+      max-width: 600px;
+      margin: 20px auto;
+  }
+
+  form input, form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+  }
+
+    form button {
+        background-color: #0066cc;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor:pointer;
+    }
+
+    /* hover sul bottone del form*/
+    form button:hover {
+        background-color: #004999; /* il bottone diventa blu scuro */
+    }
